@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DropPrime | Plataforma de Dropshipping</title>
+    <meta
+      name="description"
+      content="Plataforma premium de dropshipping para motivar novos vendedores e escalar operações com automação, comunidade e aprovação inteligente."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="/">DropPrime</a>
+        <nav class="nav-links">
+          <a href="#beneficios">Benefícios</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="/auth">Entrar</a>
+          <a class="btn btn-primary" href="/auth">Começar agora</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="eyebrow">Plataforma completa de alta conversão</span>
+            <h1>Construa um negócio de dropshipping que inspira confiança.</h1>
+            <p>
+              Do cadastro à aprovação, o DropPrime oferece um fluxo elegante,
+              rápido e seguro para novos vendedores. Design premium e base
+              preparada para Vercel, Firebase ou Render.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="/auth">Criar minha conta</a>
+              <a class="btn btn-secondary" href="#como-funciona">Ver fluxo</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h3>Painel inteligente</h3>
+            <ul>
+              <li>✅ Cadastro com Firebase Auth</li>
+              <li>✅ Aprovação com status em banco</li>
+              <li>✅ Interface moderna e responsiva</li>
+              <li>✅ Estrutura pronta para deploy</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="beneficios" class="section">
+        <div class="container">
+          <h2>Por que essa plataforma é melhor?</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Experiência premium</h3>
+              <p>
+                Tipografia moderna, contraste refinado e componentes desenhados
+                para gerar credibilidade.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Fluxo de aprovação real</h3>
+              <p>
+                Cada usuário recebe um status no banco: <strong>pending</strong>,
+                <strong>approved</strong> ou <strong>rejected</strong>.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Escalável e fácil de manter</h3>
+              <p>
+                Código organizado, páginas limpas e integração direta com
+                Firebase para autenticação e dados.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="como-funciona" class="section section-alt">
+        <div class="container">
+          <h2>Como funciona</h2>
+          <ol class="steps">
+            <li>O usuário cria conta na página <strong>/auth</strong>.</li>
+            <li>Os dados são salvos no Realtime Database.</li>
+            <li>Enquanto não aprovado, ele fica em <strong>/aprovacao-pendente</strong>.</li>
+            <li>Após aprovação, acessa o dashboard com liberdade.</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 DropPrime. Feito para motivar pessoas a vender melhor.</p>
+      </div>
+    </footer>
+  </body>
+</html>

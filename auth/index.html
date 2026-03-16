@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DropPrime | Acesso</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body class="auth-page">
+    <main class="auth-wrapper">
+      <section class="auth-card">
+        <a class="brand" href="/">DropPrime</a>
+        <h1>Entre na sua conta</h1>
+        <p>Cadastre-se para iniciar seu processo e aguardar aprovação.</p>
+
+        <div class="tabs">
+          <button id="loginTab" class="tab active" type="button">Entrar</button>
+          <button id="registerTab" class="tab" type="button">Criar conta</button>
+        </div>
+
+        <form id="authForm" class="form">
+          <label>
+            Nome completo
+            <input id="name" type="text" placeholder="Seu nome" />
+          </label>
+          <label>
+            E-mail
+            <input id="email" type="email" placeholder="seu@email.com" required />
+          </label>
+          <label>
+            Senha
+            <input id="password" type="password" placeholder="******" required minlength="6" />
+          </label>
+          <button id="submitButton" class="btn btn-primary" type="submit">Entrar</button>
+        </form>
+
+        <p id="authMessage" class="message" role="status"></p>
+      </section>
+    </main>
+
+    <script type="module" src="/assets/js/firebase.js"></script>
+    <script type="module" src="/assets/js/auth.js"></script>
+  </body>
+</html>
