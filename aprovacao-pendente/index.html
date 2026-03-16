@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DropPrime | Aprovação pendente</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body class="pending-page">
+    <main class="center-layout">
+      <section class="pending-card">
+        <h1>Aprovação em análise</h1>
+        <p>
+          Sua conta foi criada com sucesso. Nosso time está revisando seu perfil
+          para liberar o acesso ao dashboard.
+        </p>
+        <div id="statusBadge" class="status-badge">Status: carregando...</div>
+        <div class="actions-row">
+          <button id="refreshStatus" class="btn btn-secondary" type="button">Atualizar status</button>
+          <button id="logout" class="btn" type="button">Sair</button>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/assets/js/firebase.js"></script>
+    <script type="module" src="/assets/js/pending.js"></script>
+  </body>
+</html>

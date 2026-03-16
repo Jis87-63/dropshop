@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: dropprime-platform
+    runtime: static
+    staticPublishPath: .
+    routes:
+      - type: rewrite
+        source: /auth
+        destination: /auth/index.html
+      - type: rewrite
+        source: /aprovacao-pendente
+        destination: /aprovacao-pendente/index.html
+      - type: rewrite
+        source: /dashboard
+        destination: /dashboard/index.html
+      - type: rewrite
+        source: /
+        destination: /index.html
